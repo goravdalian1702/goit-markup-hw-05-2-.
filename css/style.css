@@ -133,6 +133,7 @@ img {
   border-radius: 2px;
 
   transform: scaleX(0);
+  transition: transform 250ms var(--animation-function);
   
 }
 
@@ -205,7 +206,8 @@ img {
   max-width: 1600px;
   padding: 200px 0;
   text-align: center;
-
+  margin-left: auto;
+  margin-right: auto;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -428,7 +430,8 @@ img {
   cursor: pointer;
 
   background-color: transparent;
-  transition: background-color 250ms var(--animation-function);
+  transition: fill, background-color 250ms var(--animation-function);
+
 }
 
 .sn-list-icon {
